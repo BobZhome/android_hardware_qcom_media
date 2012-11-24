@@ -45,6 +45,9 @@ endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm7x27)
 libOmxVdec-def += -DMAX_RES_720P
 endif
+ifeq ($(TARGET_BOARD_PLATFORM),thunderc)
+libOmxVdec-def += -DMAX_RES_720P
+endif
 ifeq ($(TARGET_BOARD_PLATFORM),msm7x30)
 libOmxVdec-def += -DMAX_RES_720P
 endif
